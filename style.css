@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    } 
+.okvir {
+    max-width: 960px;
+    
+    margin: 0 auto;
+}
+.container {
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 40px;
+    justify-content: space-between;
+
+}
+
+.box {
+    width: 150px;
+    height: 120px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-image: url(placeholder-image/placeholder-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(99, 172, 221);
+    margin: 0;
+    position: relative;
+    
+    
+}
+.box p {
+    margin: 0;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(214, 219, 228);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    
+    
+    
+}
+
+
+/*@media screen and (max-width: 960px) {
+    .container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+*/
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
